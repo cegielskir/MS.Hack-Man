@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Ms.Hack-ManBot:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Ms_Hack_ManBot_jar</output-path>
+    <root id="archive" name="Ms.Hack-ManBot.jar">
+      <element id="module-output" name="Ms.Hack-ManBot" />
+    </root>
+  </artifact>
+</component>
