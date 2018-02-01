@@ -1,3 +1,5 @@
+
+
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -34,6 +36,17 @@ public class Vertex {
         return false;
     }
 
+    public MoveType whichAdj(Vertex vertex){
+        for(DirectionAndVertex dirAndVert : this.adjList) if(dirAndVert.vertex.equals(vertex)) return dirAndVert.direction;
+        return null;
+    }
+
+    public MoveType anotherDir(MoveType move){
+        for(DirectionAndVertex dirAndVert : this.adjList){
+            if(dirAndVert.direction != move) return dirAndVert.direction;
+        }
+        return null;
+    }
 
 //    private boolean hasHorizontalAdj(){
 //        for(DirectionAndVertex dirAndVert : this.adjList) {

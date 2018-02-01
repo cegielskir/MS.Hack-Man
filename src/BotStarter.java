@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.util.Random;
 
 public class BotStarter {
@@ -27,7 +28,7 @@ public class BotStarter {
 
 
 //        String key = "field";
-//        String value = "S,.,E0,x,.,.,.,.,.,.,.,.,.,.,.,x,.,.,S,.,x,.,x,.,x,x,x,x,.,x,x,x,x,.,x,.,x,.,.,x,.,.,.,x,.,.,.,.,.,.,.,x,.,.,.,x,.,.,x,x,x,.,x,.,x,x,x,x,x,.,x,.,x,x,x,.,.,x,.,.,.,x,.,.,.,.,.,.,.,x,.,.,.,x,.,.,.,.,x,.,x,.,x,x,.,x,x,.,x,.,x,.,.,.,x,.,x,x,.,.,.,x,x,.,x,x,.,.,.,x,x,.,x,Gl,.,x,x,.,x,x,x,x,.,x,x,x,x,.,x,x,.,Gr,x,.,x,x,.,.,.,.,.,.,.,.,.,.,.,x,x,.,x,.,.,.,x,.,x,x,x,x,x,x,x,x,x,.,x,P1,.,.,.,x,.,.,.,.,.,.,x,x,x,.,.,.,.,.,.,x,.,.,x,.,x,x,.,x,.,.,.,.,.,x,.,x,x,.,x,.,.,x,.,x,x,.,x,x,x,x,x,x,x,.,x,x,.,x,.,.,x,.,x,x,.,x,.,.,.,.,.,x,.,x,x,P0,x,.,S,.,.,C,.,.,.,.,x,x,x,C,.,.,.,.,.,.,S";
+//        String value = "S;C,.,E1;B,x,.,.,.,.,B,.,.,.,.,.,C,x,.,.,S,.,x,.,x,.,x,x,x,x,.,x,x,x,x,.,x,.,x,.,.,x,.,.,.,x,.,.,.,.,.,.,.,x,.,.,.,x,.,.,x,x,x,.,x,.,x,x,x,x,x,.,x,.,x,x,x,.,P0,x,.,.,.,x,.,.,.,.,.,.,.,x,.,.,.,x,.,.,.,.,x,.,x,.,x,x,.,x,x,.,x,E2,x,.,.,.,x,.,x,x,.,.,.,x,x,.,x,x,.,.,E0,x,x,.,x,Gl,.,x,x,.,x,x,x,x,.,x,x,x,x,.,x,x,.,Gr,x,.,x,x,.,.,.,.,.,.,.,P1,.,.,.,x,x,.,x,.,.,.,x,.,x,x,x,x,x,x,x,x,x,.,x,.,.,.,.,x,.,.,.,.,.,.,x,x,x,.,.,.,.,.,.,x,.,.,x,.,x,x,.,x,.,.,.,.,.,x,.,x,x,.,x,.,.,x,.,x,x,.,x,x,x,x,x,x,x,E3,x,x,.,x,.,.,x,.,x,x,.,x,.,.,.,C,.,x,.,x,x,E2,x,.,S,.,.,.,.,.,.,.,x,x,x,.,.,.,.,.,.,.,S";
 //
 //        try{
 //         GraphField field = new GraphField();
@@ -39,8 +40,9 @@ public class BotStarter {
 //        field.parseFromString(value);
 //        field.initGraph();
 //        field.myLastMove=new Move(MoveType.DOWN);
-//        //field.getGraph().drawGraph();
-//            System.out.println(field.whereShouldIGo(0));
+//        field.hisLastMove = new Move(MoveType.LEFT);
+//        field.lastBugsPositions.add(new Point(2,1));
+//        System.out.println(field.whereShouldIGo(0));
 //
 //
 //

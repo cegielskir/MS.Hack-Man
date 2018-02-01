@@ -15,7 +15,7 @@ public class Field {
     protected Move hisLastMove = null;
     protected Point hisLastPosition = null;
 
-
+    protected ArrayList<Point> lastBugsPositions;
     protected String[][] field;
     protected Point myPosition;
     protected Point opponentPosition;
@@ -31,6 +31,7 @@ public class Field {
         this.bombPositions = new ArrayList<>();
         this.tickingBombPositions = new ArrayList<>();
         this.spawnPoints = new ArrayList<>();
+        this.lastBugsPositions = new ArrayList<>();
 
     }
 
@@ -57,7 +58,10 @@ public class Field {
                 this.field[y][x] = "";
             }
         }
-
+        this.lastBugsPositions.clear();
+        for(Bug bug : this.enemyPositions){
+            this.lastBugsPositions.add(bug.point);
+        }
         this.myPosition = null;
         this.opponentPosition = null;
         this.enemyPositions.clear();

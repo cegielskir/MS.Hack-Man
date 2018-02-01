@@ -55,9 +55,48 @@ public class GraphField extends Field {
     }
 
 
+    private MoveType lastBugMove(Point bugPoint){
+        for(Point lastBugPoint : this.lastBugsPositions){
+            Vertex lastVert = this.graph.get(lastBugPoint);
+            if(lastVert.areAdj(this.graph.get(bugPoint))){
+                this.lastBugsPositions.remove(lastBugPoint);
+                return lastVert.whichAdj(this.graph.get(bugPoint));
+
+            }
+        }
+        return null;
+    }
+
     private void initInavailablePositions(int bombs) {
         this.bugs = new ArrayList<>();
         this.bugs.addAll(this.spawnPoints);
+        for(Bug bug : this.enemyPositions){
+            Vertex vert = this.graph.get(bug.point);
+            MoveType lastMove = lastBugMove(bug.point);
+            int i = 4;
+            while( lastMove != null && i >0){
+                if(vert.adjList.size() == 2){
+                    this.bugs.add(vert.point);
+                    lastMove = vert.anotherDir(oppositeDirection(lastMove));
+                    vert = vert.goTo(lastMove);
+                    i--;
+                }
+                else {
+                    List<Point> myPoint = new ArrayList<>();
+                    List<Point> bugPoints = new ArrayList<>();
+                    for(Bug bugg : this.enemyPositions){
+                        bugPoints.add(bugg.point);
+                    }
+                    myPoint.add(this.myPosition);
+                    int my,his;
+                    my = howFarFromTheClosest(vert.point,myPoint);
+                    his= howFarFromTheClosest(vert.point,bugPoints);
+                    if(his <= my) this.bugs.add(vert.point);
+
+                    i = -1;
+                }
+            }
+        }
         for (Bug bug : this.enemyPositions) {
             if(bug instanceof PredictBug & !this.graph.get(bug.point).areAdj(this.graph.get(this.myPosition))){
                 this.bugs.add(this.graph.get(bug.point).goTo(bug.whereItWillGo(this)).point);
@@ -81,6 +120,29 @@ public class GraphField extends Field {
         }
     }
 
+    public int howFarFromTheClosest(Point point,List<Point> listOfTargets) {
+        Vertex theTarget = null;
+        Queue<Vertex> queue = new LinkedList<>();
+        prepareGraphToBFS(point);
+        queue.add(this.graph.get(point));
+        while (!queue.isEmpty()) {
+            Vertex u = queue.remove();
+            for (DirectionAndVertex dirAndVer : u.adjList) {
+                if (!dirAndVer.vertex.visited) {
+                    dirAndVer.vertex.visited = true;
+                    dirAndVer.vertex.wayToGo = oppositeDirection(dirAndVer.direction);
+                    dirAndVer.vertex.parent = u;
+                    if (listOfTargets.contains(dirAndVer.vertex.point)) {
+                        theTarget = dirAndVer.vertex;
+                        queue = new LinkedList<>();
+                        break;
+                    }
+                    queue.add(dirAndVer.vertex);
+                }
+            }
+        }
+        return howFarToTheRoot(theTarget);
+    }
 
 
     private Move passiveMovement(int bombs) {
@@ -92,14 +154,22 @@ public class GraphField extends Field {
         if (whereToGo.equals(MoveType.PASS) & bombs > 0) return new Move(whereToGo, 2);
         if (bombs > 0) {
             Vertex whereWouldIBe = this.graph.get(this.getMyPosition()).goTo(whereToGo);
-            Sign sign = runAwayBFS(whereWouldIBe.point, whereWouldIBe.point);
+            MoveType whereWillHeGo = modifiedBFS(this.snippetPositions,this.opponentPosition,true,0,true).whereIsTheTarget;
+            Vertex whereWillHeBe = this.graph.get(this.getOpponentPosition()).goTo(whereWillHeGo);
+            Sign hisSign = runAwayBFS(whereWouldIBe.point,whereWillHeBe.point);
+            Sign mySign = runAwayBFS(whereWouldIBe.point, whereWouldIBe.point);
             List<Point> enemies = new ArrayList<>();
             for(Bug bug : this.enemyPositions) enemies.add(bug.point);
-            enemies.add(opponentPosition);
-            for (Point point : enemies) {
-                if (this.graph.get(point).isTheSameLine(whereWouldIBe)) {
-                    this.dontGoThere.add(whereWouldIBe.point);
-                    return new Move(whereToGo, sign.howFar);
+            if ((this.graph.get(this.getOpponentPosition()).isTheSameLine(whereWouldIBe) && mySign.howFar < hisSign.howFar)){
+                this.dontGoThere.add(whereWouldIBe.point);
+                return new Move(whereToGo, mySign.howFar);
+            }
+            else{
+                for(Point point : enemies){
+                    if(this.graph.get(point).isTheSameLine(whereWouldIBe)){
+                        this.dontGoThere.add(whereWouldIBe.point);
+                        return new Move(whereToGo, mySign.howFar);
+                    }
                 }
             }
         }
@@ -214,7 +284,7 @@ public class GraphField extends Field {
         else return 0;
     }
 
-    private Sign runAwayBFS(Point point, Point whereIAm) {
+    private Sign runAwayBFS(Point bombPoint, Point whereIAm) {
         Vertex target = null;
         Queue<Vertex> queue = new LinkedList<>();
         prepareGraphToBFS(whereIAm);
@@ -227,7 +297,7 @@ public class GraphField extends Field {
                     if (!this.bugs.contains(dirAndVer.vertex.point)) {
                         dirAndVer.vertex.wayToGo = dirAndVer.direction;
                         dirAndVer.vertex.parent = u;
-                        if (!dirAndVer.vertex.isTheSameLine(this.graph.get(point))) {
+                        if (!dirAndVer.vertex.isTheSameLine(this.graph.get(bombPoint))) {
                             target = dirAndVer.vertex;
                             queue = new LinkedList<>();
                             break;

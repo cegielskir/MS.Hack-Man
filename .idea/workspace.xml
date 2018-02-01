@@ -6,7 +6,13 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f79c696-993c-42dc-9789-6953774192ea" name="Default" comment="" />
+    <list default="true" id="4f79c696-993c-42dc-9789-6953774192ea" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BotStarter.java" afterPath="$PROJECT_DIR$/src/BotStarter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Field.java" afterPath="$PROJECT_DIR$/src/Field.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GraphField.java" afterPath="$PROJECT_DIR$/src/GraphField.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Vertex.java" afterPath="$PROJECT_DIR$/src/Vertex.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,21 +27,19 @@
       <file leaf-file-name="BotParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BotParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state relative-caret-position="17">
               <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GraphField.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/GraphField.java">
+      <file leaf-file-name="Field.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Field.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3893">
-              <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="306">
+              <caret line="66" column="36" lean-forward="true" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -53,9 +57,23 @@
       <file leaf-file-name="Vertex.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Vertex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-              <folding />
+            <state relative-caret-position="357">
+              <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GraphField.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/GraphField.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122">
+              <caret line="161" column="70" lean-forward="true" selection-start-line="161" selection-start-column="70" selection-end-line="161" selection-end-column="70" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/src/DirectionAndVertex.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="30" />
+              <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -73,8 +91,8 @@
       <file leaf-file-name="ChaseBug.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ChaseBug.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+            <state relative-caret-position="187">
+              <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#161#162#0" expanded="true" />
@@ -87,7 +105,7 @@
       <file leaf-file-name="LeverBug.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LeverBug.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="442">
               <caret line="29" column="94" lean-forward="false" selection-start-line="29" selection-start-column="94" selection-end-line="29" selection-end-column="94" />
               <folding />
             </state>
@@ -97,19 +115,11 @@
       <file leaf-file-name="BotStarter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BotStarter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FarChaseBug.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FarChaseBug.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="20" column="99" lean-forward="false" selection-start-line="20" selection-start-column="99" selection-end-line="20" selection-end-column="99" />
-              <folding />
+            <state relative-caret-position="51">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,8 +127,8 @@
       <file leaf-file-name="PredictBug.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PredictBug.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+            <state relative-caret-position="289">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -139,10 +149,11 @@
       <find>height</find>
       <find>field</find>
       <find>snippetPositions</find>
+      <find>areAdj</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -174,14 +185,14 @@
         <option value="$PROJECT_DIR$/src/Bug.java" />
         <option value="$PROJECT_DIR$/src/Move.java" />
         <option value="$PROJECT_DIR$/src/BotParser.java" />
-        <option value="$PROJECT_DIR$/src/Field.java" />
-        <option value="$PROJECT_DIR$/src/Vertex.java" />
         <option value="$PROJECT_DIR$/src/ChaseBug.java" />
         <option value="$PROJECT_DIR$/src/FarChaseBug.java" />
         <option value="$PROJECT_DIR$/src/LeverBug.java" />
         <option value="$PROJECT_DIR$/src/PredictBug.java" />
-        <option value="$PROJECT_DIR$/src/GraphField.java" />
+        <option value="$PROJECT_DIR$/src/Field.java" />
+        <option value="$PROJECT_DIR$/src/Vertex.java" />
         <option value="$PROJECT_DIR$/src/BotStarter.java" />
+        <option value="$PROJECT_DIR$/src/GraphField.java" />
       </list>
     </option>
   </component>
@@ -192,9 +203,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="1378" />
-    <option name="height" value="745" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -214,7 +226,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -245,6 +256,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -817,16 +829,17 @@
       <workItem from="1516228009032" duration="93148000" />
       <workItem from="1516536222315" duration="124000" />
       <workItem from="1516569269877" duration="24812000" />
-      <workItem from="1516704638991" duration="12798000" />
+      <workItem from="1516704638991" duration="12863000" />
+      <workItem from="1516898769072" duration="69000" />
+      <workItem from="1517413624921" duration="7355000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134673000" />
+    <option name="totallyTimeSpent" value="142162000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1378" height="745" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -847,10 +860,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.028346457" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15993789" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16005874" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15959005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -939,7 +952,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -971,7 +986,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -979,7 +993,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1023,7 +1039,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1055,7 +1073,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1063,7 +1080,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1081,7 +1100,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1116,7 +1137,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1132,7 +1152,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1142,7 +1164,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="91" column="11" lean-forward="false" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1175,17 +1196,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Field.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1201,7 +1211,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1215,7 +1224,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FarChaseBug.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
+        <state relative-caret-position="289">
           <caret line="20" column="99" lean-forward="false" selection-start-line="20" selection-start-column="99" selection-end-line="20" selection-end-column="99" />
           <folding />
         </state>
@@ -1223,7 +1232,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LeverBug.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="442">
           <caret line="29" column="94" lean-forward="false" selection-start-line="29" selection-start-column="94" selection-end-line="29" selection-end-column="94" />
           <folding />
         </state>
@@ -1239,8 +1248,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ChaseBug.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+        <state relative-caret-position="187">
+          <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#161#162#0" expanded="true" />
@@ -1249,50 +1258,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PredictBug.java">
+    <entry file="file://$PROJECT_DIR$/src/DirectionAndVertex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BotStarter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="187">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BotParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="17">
           <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DirectionAndVertex.java">
+    <entry file="file://$PROJECT_DIR$/src/Field.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="30" />
+        <state relative-caret-position="306">
+          <caret line="66" column="36" lean-forward="true" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Vertex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        <state relative-caret-position="357">
+          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PredictBug.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BotStarter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GraphField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3893">
-          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        <state relative-caret-position="122">
+          <caret line="161" column="70" lean-forward="true" selection-start-line="161" selection-start-column="70" selection-end-line="161" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
