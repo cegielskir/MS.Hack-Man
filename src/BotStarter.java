@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 import java.awt.*;
+=======
+
+
+
+>>>>>>> Paths blocking added
 import java.util.Random;
 
 public class BotStarter {
