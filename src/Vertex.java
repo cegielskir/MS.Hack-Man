@@ -13,12 +13,14 @@ public class Vertex {
     public boolean visited;
     public MoveType wayToGo;
     public Point point;
-    public Vertex parent; //uzywany do BFSa
+    public Vertex parent; //BFS uses it
+    public List<Sign> closestCrosses;
 
 
 
 
     public Vertex (Point point){
+        this.closestCrosses = new ArrayList<>();
         this.adjList = new ArrayList<>();
         this.point = point;
 

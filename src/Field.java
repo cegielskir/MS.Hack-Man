@@ -4,6 +4,9 @@ import java.util.ArrayList;
 
 public class Field {
 
+    public String err;
+    public int round =0;
+
     protected final String EMTPY_FIELD = ".";
     protected final String BLOCKED_FIELD = "x";
 
@@ -19,14 +22,18 @@ public class Field {
     protected String[][] field;
     protected Point myPosition;
     protected Point opponentPosition;
-    protected ArrayList<Bug> enemyPositions;
+    protected ArrayList<Bug> enemies;
+    protected ArrayList<Point> enemyPositions;
     protected ArrayList<Point> snippetPositions;
     protected ArrayList<Point> bombPositions;
     protected ArrayList<Point> tickingBombPositions;
     protected ArrayList<Point> spawnPoints;
+    protected ArrayList<Point> whereWillBugsGo;
 
     public Field() {
+        whereWillBugsGo = new ArrayList<>();
         this.enemyPositions = new ArrayList<>();
+        this.enemies = new ArrayList<>();
         this.snippetPositions = new ArrayList<>();
         this.bombPositions = new ArrayList<>();
         this.tickingBombPositions = new ArrayList<>();
@@ -58,13 +65,15 @@ public class Field {
                 this.field[y][x] = "";
             }
         }
+        whereWillBugsGo.clear();
         this.lastBugsPositions.clear();
-        for(Bug bug : this.enemyPositions){
+        for(Bug bug : this.enemies){
             this.lastBugsPositions.add(bug.point);
         }
+        this.enemyPositions.clear();
         this.myPosition = null;
         this.opponentPosition = null;
-        this.enemyPositions.clear();
+        this.enemies.clear();
         this.snippetPositions.clear();
         this.bombPositions.clear();
         this.tickingBombPositions.clear();
@@ -77,7 +86,6 @@ public class Field {
      * @param input String input from the engine
      */
     public void parseFromString(String input) {
-        clearField();
 
         String[] cells = input.split(",");
         int x = 0;
@@ -144,10 +152,11 @@ public class Field {
      * @param y Y-position
      */
     private void parseEnemyCell(char type, int x, int y){
-        if(type == '0') this.enemyPositions.add(new ChaseBug(new Point(x,y)));
-        if(type == '1') this.enemyPositions.add(new PredictBug(new Point(x,y)));
-        if(type == '2') this.enemyPositions.add(new LeverBug(new Point(x,y)));
-        if(type == '3') this.enemyPositions.add(new FarChaseBug(new Point(x,y)));
+        if(type == '0') this.enemies.add(new ChaseBug(new Point(x,y)));
+        if(type == '1') this.enemies.add(new PredictBug(new Point(x,y)));
+        if(type == '2') this.enemies.add(new LeverBug(new Point(x,y)));
+        if(type == '3') this.enemies.add(new FarChaseBug(new Point(x,y)));
+        this.enemyPositions.add(new Point(x,y));
     }
 
     private void parseSpawnCell(char type,int x, int y) {this.spawnPoints.add(new Point(x,y));}
@@ -218,8 +227,8 @@ public class Field {
         return this.opponentPosition;
     }
 
-    public ArrayList<Bug> getEnemyPositions() {
-        return this.enemyPositions;
+    public ArrayList<Bug> getEnemies() {
+        return this.enemies;
     }
 
     public ArrayList<Point> getSnippetPositions() {

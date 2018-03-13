@@ -1,6 +1,5 @@
 import java.util.HashMap;
 
-<<<<<<< HEAD
 /**
  * BotState
  *
@@ -8,8 +7,6 @@ import java.util.HashMap;
  *
  * @author Jim van Eeden - jim@riddles.io
  */
-=======
->>>>>>> Paths blocking added
 public class BotState {
     private int MAX_TIMEBANK;
     private int TIME_PER_MOVE;

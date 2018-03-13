@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
-      <module fileurl="file://$PROJECT_DIR$/Ms.Hack-ManBot.iml" filepath="$PROJECT_DIR$/Ms.Hack-ManBot.iml" />
-=======
       <module fileurl="file://$PROJECT_DIR$/Bocik.iml" filepath="$PROJECT_DIR$/Bocik.iml" />
->>>>>>> Paths blocking added
     </modules>
   </component>
 </project>

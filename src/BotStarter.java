@@ -1,10 +1,7 @@
-<<<<<<< HEAD
+
+
+
 import java.awt.*;
-=======
-
-
-
->>>>>>> Paths blocking added
 import java.util.Random;
 
 public class BotStarter {
@@ -28,15 +25,17 @@ public class BotStarter {
     }
 
     public static void main(String[] args) {
+        try{
         BotParser parser = new BotParser(new BotStarter());
         parser.run();
 
 
 
 //        String key = "field";
-//        String value = "S;C,.,E1;B,x,.,.,.,.,B,.,.,.,.,.,C,x,.,.,S,.,x,.,x,.,x,x,x,x,.,x,x,x,x,.,x,.,x,.,.,x,.,.,.,x,.,.,.,.,.,.,.,x,.,.,.,x,.,.,x,x,x,.,x,.,x,x,x,x,x,.,x,.,x,x,x,.,P0,x,.,.,.,x,.,.,.,.,.,.,.,x,.,.,.,x,.,.,.,.,x,.,x,.,x,x,.,x,x,.,x,E2,x,.,.,.,x,.,x,x,.,.,.,x,x,.,x,x,.,.,E0,x,x,.,x,Gl,.,x,x,.,x,x,x,x,.,x,x,x,x,.,x,x,.,Gr,x,.,x,x,.,.,.,.,.,.,.,P1,.,.,.,x,x,.,x,.,.,.,x,.,x,x,x,x,x,x,x,x,x,.,x,.,.,.,.,x,.,.,.,.,.,.,x,x,x,.,.,.,.,.,.,x,.,.,x,.,x,x,.,x,.,.,.,.,.,x,.,x,x,.,x,.,.,x,.,x,x,.,x,x,x,x,x,x,x,E3,x,x,.,x,.,.,x,.,x,x,.,x,.,.,.,C,.,x,.,x,x,E2,x,.,S,.,.,.,.,.,.,.,x,x,x,.,.,.,.,.,.,.,S";
+//        String value ="S,.,.,x,.,.,.,.,.,.,.,.,E1,.,.,x,E2,.,S,.,x,.,x,B,x,x,x,x,C,x,x,x,x,.,x,.,x,.,.,x,.,.,.,x,.,C,E3,.,.,E0,.,x,.,.,.,x,P0,.,x,x,x,.,x,.,x,x,x,x,x,.,x,.,x,x,x,.,.,x,.,.,.,x,.,.,.,.,.,.,.,x,.,.,.,x,.,.,.,.,x,.,x,.,x,x,.,x,x,.,x,.,x,.,.,.,x,.,x,x,.,.,.,x,x,.,x,x,.,.,.,x,x,E2,x,Gl,.,x,x,.,x,x,x,x,.,x,x,x,x,.,x,x,.,Gr,x,.,x,x,.,.,.,C,.,.,.,.,.,.,.,x,x,.,x,.,.,.,x,.,x,x,x,x,x,x,x,x,x,.,x,.,.,.,.,x,P1,.,.,.,.,.,x,x,x,.,.,.,.,.,.,x,.,.,x,.,x,x,.,x,.,.,.,.,.,x,.,x,x,.,x,.,.,x,.,x,x,.,x,x,x,x,x,x,x,.,x,x,.,x,.,.,x,.,x,x,.,x,.,.,.,.,.,x,.,x,x,.,x,.,S,.,.,.,.,.,.,.,x,x,x,.,.,.,.,.,.,.,S";
 //
-//        try{
+
+//
 //         GraphField field = new GraphField();
 //         field.setHeight(15);
 //         field.setWidth(19);
@@ -45,17 +44,23 @@ public class BotStarter {
 //        field.initField();
 //        field.parseFromString(value);
 //        field.initGraph();
-//        field.myLastMove=new Move(MoveType.DOWN);
-//        field.hisLastMove = new Move(MoveType.LEFT);
-//        field.lastBugsPositions.add(new Point(2,1));
+//        field.myLastMove=new Move(MoveType.UP);
+//        field.hisLastMove = new Move(MoveType.UP);
+//        field.lastBugsPositions.add(new Point(16,1));field.lastBugsPositions.add(new Point(17,7));
+//        for(Vertex vert : field.graph.values()){
+//            System.out.println("Point: " + vert.point);
+//            for(Sign sign : vert.closestCrosses) {
+//                System.out.println("Where: " + sign.where + " how far: " + sign.howFar );
+//            }
+//        }
+
 //        System.out.println(field.whereShouldIGo(0));
-//
-//
-//
-//    } catch (Exception e) {
-//        System.err.println(String.format(
-//                "Cannot parse game data value '%s' for key '%s'", value, key));
-//        e.printStackTrace();
-//    }
+
+
+
+
+    } catch ( Exception es) {
+            System.err.println(es);
+        }
     }
 }

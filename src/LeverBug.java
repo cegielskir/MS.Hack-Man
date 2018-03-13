@@ -18,7 +18,8 @@ public class LeverBug extends Bug{
         listOfPlayers.add(graphField.opponentPosition);
         Target player = graphField.modifiedBFS(listOfPlayers,this.point,false,-1,false);
         ArrayList<Point> enemies = new ArrayList<>();
-        for(Bug bug : graphField.enemyPositions) enemies.add(bug.point);
+        for(Bug bug : graphField.enemies) enemies.add(bug.point);
+//        if(enemies.size()!= 1) enemies.remove(this.point);
         Target bug = graphField.modifiedBFS(enemies,player.whatIsTheTarget,false,-1,false);
         ArrayList<Point> theTarget = new ArrayList<>();
         Point target = new Point(player.whatIsTheTarget.x + (player.whatIsTheTarget.x - bug.whatIsTheTarget.x),
